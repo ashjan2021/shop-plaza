@@ -20,3 +20,22 @@ discount
 bgcolor
 panelcolor
 textcolor
+
+
+
+$env:DEBUG="development:*"
+Remove-Item env:DEBUG
+
+$env:NODE_ENV="development"
+
+
+
+/ -> signup or login
+/shop -> shop
+/users/cart -> cart
+/admin -> admin panel
+/owner/products -> show all products
+/owner/admin -> show admin panel to create products
+
+
+
