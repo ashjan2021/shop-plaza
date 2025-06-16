@@ -8,10 +8,10 @@
         </div>
         <% } %>
 
-    <div class="w-full h-screen flex items-start gap-5">
-        <div class="w-[18%] flex h-full flex-col bg-zinc-800 items-start text-white gap-5 py-20">
+    <div class="w-full h-screen flex items-start gap-20">
+        <div class="w-[22%] flex h-full flex-col bg-zinc-800 items-start text-white gap-5 py-20">
             <div class="flex items-center gap-2 px-5 py-2 w-full">
-                <h3>sort by</h3>
+                <h3 class="px-5">Sort by</h3>
                 <form action="/shop" class="text-black">
                     <select class="border-[1px] px-2 py-1" name="sortby" id="">
                         <option value="popular">Popular</option>
@@ -20,18 +20,18 @@
                 </form>
             </div>
             <div class="flex flex-col w-full mt-5">
-                <a class="block w-full px-5 py-2 hover:bg-zinc-700 transition-all duration-300" href="">New Collection</a>
-                <a class="block w-full px-5 py-2 hover:bg-zinc-700 transition-all duration-300" href="">All Products</a>
-                <a class="block w-full px-5 py-2 hover:bg-zinc-700 transition-all duration-300" href="">Discounted Products</a>
+                <a class="block w-full px-10 py-2 hover:bg-zinc-700 transition-all duration-300" href="">New Collection</a>
+                <a class="block w-full px-10 py-2 hover:bg-zinc-700 transition-all duration-300" href="">All Products</a>
+                <a class="block w-full px-10 py-2 hover:bg-zinc-700 transition-all duration-300" href="">Discounted Products</a>
             </div>
             <div class="w-full">
-                <a class="block w-full px-5 py-2 hover:bg-zinc-700 transition-all duration-300" href="">Filter by :</a>
-                <a class="block w-full px-5 py-2 hover:bg-zinc-700 transition-all duration-300" href="">Availability</a>
-                <a class="block w-full px-5 py-2 hover:bg-zinc-700 transition-all duration-300" href="">Discount</a>
+                <a class="block w-full px-10 py-2 hover:bg-zinc-700 transition-all duration-300" href="">Filter by :</a>
+                <a class="block w-full px-10 py-2 hover:bg-zinc-700 transition-all duration-300" href="">Availability</a>
+                <a class="block w-full px-10 py-2 hover:bg-zinc-700 transition-all duration-300" href="">Discount</a>
             </div>
         </div>
         <div class="w-[75%] flex flex-col gap-5 h-full py-20">
-            <div class="flex items-start gap-5">
+            <div class="flex items-start flex-wrap gap-5">
                 <% products.forEach(function(product){ %>
                     <div class="w-60">
                         <div class="w-full h-52 flex items-center justify-center bg-[<%= product.bgcolor %>]">
